@@ -42,7 +42,7 @@ RUN adduser --disabled-password --gecos '' theia && \
 
 USER theia
 
-ENV GO_VERSION=1.16 \
+ENV GO_VERSION=1.17 \
     GOOS=linux \
     GOARCH=amd64 \
     GOROOT=/home/go \
@@ -54,7 +54,7 @@ RUN curl -fsSL https://storage.googleapis.com/golang/go$GO_VERSION.$GOOS-$GOARCH
 
 # Install VS Code Go tools: https://github.com/Microsoft/vscode-go/blob/058eccf17f1b0eebd607581591828531d768b98e/src/goInstallTools.ts#L19-L45
 RUN go get -u -v github.com/mdempsky/gocode && \
-    go get -u -v github.com/uudashr/gopkgs/cmd/gopkgs && \
+    go get -u -v github.com/uudashr/gopkgs/tree/master/cmd/gopkgs && \
     go get -u -v github.com/ramya-rao-a/go-outline && \
     go get -u -v github.com/acroca/go-symbols && \
     go get -u -v golang.org/x/tools/cmd/guru && \
