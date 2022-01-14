@@ -40,10 +40,10 @@ RUN adduser --disabled-password --gecos '' theia && \
     chown -R theia:theia /home/go && \
     chown -R theia:theia /home/go-tools;
 
-USER theia
+USER root
 
 ## Go
-ENV GO_VERSION=1.17.3 \
+ENV GO_VERSION=1.17.6 \
     GOOS=linux \
     GOARCH=amd64 \
     GOROOT=/usr/local/go \
