@@ -43,7 +43,7 @@ RUN adduser --disabled-password --gecos '' theia && \
 USER root
 
 ## Go
-ENV GO_VERSION=1.17.3 \
+ENV GO_VERSION=1.17.7 \
     GOOS=linux \
     GOARCH=amd64 \
     GOROOT=/usr/local/go \
