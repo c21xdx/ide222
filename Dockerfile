@@ -65,6 +65,8 @@ RUN go get -u -v github.com/uudashr/gopkgs/cmd/gopkgs@v2 && \
     GO111MODULE=on go get -v github.com/golangci/golangci-lint/cmd/golangci-lint && \
                    go get -u -v golang.org/x/tools/gopls@latest
                    go get -u -v golang.org/x/tools/cmd/goimports@latest
+                   go get -u -v github.com/ianthehat/godef
+                   go get -u -v github.com/stamblerre/gocode
                    
 
 # Configure Theia
