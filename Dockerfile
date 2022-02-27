@@ -63,10 +63,7 @@ RUN go get -u -v github.com/uudashr/gopkgs/cmd/gopkgs@v2 && \
     go get -u -v github.com/haya14busa/goplay/cmd/goplay && \
     go get -u -v github.com/go-delve/delve/cmd/dlv && \
     GO111MODULE=on go get -v github.com/golangci/golangci-lint/cmd/golangci-lint && \
-                   go install golang.org/x/tools/gopls@latest && \
-                   go install golang.org/x/tools/cmd/goimports@latest && \
-                   go get -u -v github.com/stamblerre/gocode
-                   
+                   go get -u -v golang.org/x/tools/gopls@v0.7.3
 
 # Configure Theia
 ENV SHELL=/bin/bash \
